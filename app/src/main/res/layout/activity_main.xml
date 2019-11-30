@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.activities.HomeActivity">
+    <ScrollView
+
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+        <RelativeLayout android:layout_height="match_parent" android:layout_width="match_parent">
+
+            <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/meditation"
+                    android:layout_gravity="center"
+                    android:backgroundTint="#E5E4E2"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    card_view:cardCornerRadius="4dp">
+
+                <TextView
+                        android:id="@+id/info_text"
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:text="@string/meditation"
+                        android:layout_height="match_parent"/>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/calm_down"
+                    android:layout_gravity="center"
+                    android:backgroundTint="#98AFC7"
+                    android:layout_below="@id/meditation"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    card_view:cardCornerRadius="4dp">
+
+                <TextView
+                        android:id="@+id/info_text1"
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:text="@string/calm_down"
+                        android:layout_height="match_parent"/>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/destress"
+                    android:layout_gravity="center"
+                    android:backgroundTint="#646D7E"
+                    android:layout_below="@id/calm_down"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    card_view:cardCornerRadius="4dp">
+
+                <TextView
+                        android:id="@+id/info_text2"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:text="@string/destress"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/relax"
+                    android:layout_gravity="center"
+                    android:backgroundTint="#5667DE"
+                    android:layout_below="@id/destress"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    card_view:cardCornerRadius="4dp">
+
+                <TextView
+                        android:id="@+id/info_text3"
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:text="@string/relax"
+                        android:layout_height="match_parent"/>
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+        >
+    </ScrollView>
+</RelativeLayout>
